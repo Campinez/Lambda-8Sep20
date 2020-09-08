@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Controller {
 	static ArrayList <Person> people = new ArrayList <Person>();
+	static ArrayList <Person> peopleSelected = new ArrayList <Person>();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,7 +27,23 @@ public class Controller {
 			System.out.println(e.getName());
 			System.out.println(e.getSurname());
 			System.out.println(e.getAge());
-	}
+		}
+		
+		/*
+		//Lambda para listar el contenido de la array
+		people.stream().forEach(a->System.out.println(a.getName()));
+		
+	*/
+		//Lambda para listar nombres que empiezan por A
+		//System.out.println("Nombres que empiezan por A mayúscula ");
+			//	people.stream().
+				//		filter(c -> c.getName().charAt(0) == 'A')
+					//			.forEach(c -> System.out.println(c));
+				
+			System.out.println("Nombres de tres caracteres ");
+				people.stream().filter(c -> c.getName().length() >5).forEach(c -> System.out.println(c.getName()));
 
-}
+								
+	
+	}
 }

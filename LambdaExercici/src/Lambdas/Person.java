@@ -1,7 +1,5 @@
 package Lambdas;
 
-import java.util.ArrayList;
-
 public class Person {
 
 	//Variables de objeto persona y arrayList de personas
