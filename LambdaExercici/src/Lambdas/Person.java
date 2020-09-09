@@ -16,7 +16,7 @@ public class Person {
 	
 	//Métodos del objeto persona
 	public String getName() {
-		return "Nombre: " + name;
+		return  name;
 	}
 	
 	public String getSurname() {
